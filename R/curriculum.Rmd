@@ -1,0 +1,58 @@
+---
+name: Ricardo 
+surname: Theodoro
+position: "Cientista de Dados Júnior"
+address: "Piracicaba/SP"
+phone: 19 992-787-729
+www: rtheodoro.com
+email: "rtheodoro@usp.br"
+twitter: rxtheodoro
+github: rtheodoro
+linkedin: rtheodoro
+date: "`r format(Sys.time(), '%B %Y')`"
+output: vitae::hyndman
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+# Sobre mim
+
+-   Bacharel em Ciências Econômicas e Mestre em Controladoria e Contabilidade
+-   Trabalho como pesquisador tratando e analisando dados desde 2018
+-   Trabalho principalmente com R e postgreSQL, mas tenho conhecimentos em Python
+-   Busco trabalho na área de ciência de dados
+
+# Educação
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Ciências Econômicas", "2010-2015", "Graduação", "UNIMEP",
+  "Controladoria e Contabilidade", "2017-2019", "Mestrado", "FEA-RP/USP",
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Trabalho
+
+```{r}
+tribble(
+  ~Year, ~Type, ~Desc,
+  2017, "OBSCOOP/USP", "Realizando pesquisas na área econômica e contábil em cooperativas.  Utilizando, principalmente, dados da Receita Federal Brasileira, da RAIS e do Banco Central.",
+  2015, "Escritório Contábil Globo", "Analista Fiscal, lançamento de notas, calculando impostos e enviando obrigações acessórias"
+) %>% 
+  brief_entries(
+    glue::glue("{Type}"),
+    Year, 
+    Desc
+  )
+```
+
+# Outras informações
+
+Comecei a trabalhar com R e postgreSQL durante o mestrado, quando entrei para o OBSCOOP/USP. Desde então passei a me interessar pela área de estatística e ciência de dados. Procuro uma oportunidade área para expandir meus conhecimentos práticos e em equipe, uma vez que eu era o único programador do OBSCOOP/USP.
+
