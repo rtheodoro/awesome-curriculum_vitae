@@ -3,7 +3,7 @@ name: Ricardo
 surname: Theodoro
 position: "Cientista de Dados Júnior"
 address: "Piracicaba/SP"
-phone: 19 992-787-729
+phone: 19 000-000-000
 www: rtheodoro.com
 email: "rtheodoro@usp.br"
 twitter: rxtheodoro
